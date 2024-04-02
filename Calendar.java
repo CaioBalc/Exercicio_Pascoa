@@ -1,7 +1,14 @@
+import java.util.Calendar;
+
 public class Calendar {
     public static int ano(int ano){
         int diaDourado = (ano % 19) + 1;
         System.out.println("A páscoa no ano de " + ano + " é no dia:");
+
+        // Pesquisar pelo método Calendar para usar este:
+        Calendar c = Calendar.getInstance();
+        c.set(year, month, day)
+
         switch (diaDourado) {
             case 1:
                 System.out.println("14 de abril");
