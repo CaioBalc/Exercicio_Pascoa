@@ -5,13 +5,6 @@ public class Calendar {
         int diaDourado = (ano % 19) + 1;
         System.out.println("A páscoa no ano de " + ano + " é no dia:");
 
-        // Pesquisar pelo método Calendar para usar este:
-        Calendar c = Calendar.getInstance();
-        c.set(2024, 3, 31);
-        System.out.println(c.get(Calendar.DAY_OF_WEEK));
-        c.add(Calendar.DAY_OF_WEEK, 4);
-        System.out.println(c.get(Calendar.DAY_OF_WEEK));
-
         switch (diaDourado) {
             case 1:
                 System.out.println("14 de abril");
